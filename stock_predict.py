@@ -13,7 +13,7 @@ from sklearn.metrics import mean_absolute_error
 from sklearn.metrics import mean_squared_error
 #导入必要的库
 df1=pd.read_excel('data.xlsx',0) 
-df1=df1.iloc[:,:]#选取从第3600行开始的数据 大概是2006年一月
+df1=df1.iloc[:,:]
 #进行数据归一化
 from sklearn import preprocessing
 min_max_scaler = preprocessing.MinMaxScaler()
